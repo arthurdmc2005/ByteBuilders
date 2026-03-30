@@ -2,12 +2,13 @@ package com.LigaAcademic.AcademicProject.controller;
 
 
 import com.LigaAcademic.AcademicProject.model.ContabilHoras;
+import com.LigaAcademic.AcademicProject.model.Membro;
 import com.LigaAcademic.AcademicProject.service.ContabilHorasService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 
 @RestController
@@ -23,4 +24,7 @@ public class ContabilHorasController {
         contabilHorasService.registrarHoras(contabilHoras);
         return "Horas contabilizada";
     }
+
+
+
 }

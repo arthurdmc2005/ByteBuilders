@@ -5,9 +5,9 @@ import jakarta.persistence.Enumerated;
 
 public enum UsersRoles {
 
-    ADMIN("ADMIN"),
+    ROLE_ADMIN("ROLE_ADMIN"),
 
-    USER("USER");
+    ROLE_USER("ROLE_USER");
 
     private String role;
 

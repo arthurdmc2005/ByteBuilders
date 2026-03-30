@@ -55,5 +55,5 @@ public class AuthenticationController {
 
         return ResponseEntity.ok().build();
     }
-    // boa noiteawdawd
+
 }

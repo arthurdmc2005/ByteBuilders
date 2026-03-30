@@ -1,0 +1,6 @@
+CREATE TABLE guildas (
+nome VARCHAR NOT NULL,
+email VARCHAR UNIQUE NOT NULL,
+matricula INT UNIQUE NOT NULL,
+guilda TEXT NOT NULL
+)

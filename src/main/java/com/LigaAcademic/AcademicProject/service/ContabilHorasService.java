@@ -8,6 +8,7 @@ import com.LigaAcademic.AcademicProject.repository.ContabilHorasRepository;
 import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 @Service
 public class ContabilHorasService {
@@ -38,5 +39,9 @@ public class ContabilHorasService {
             System.out.println("Utilize estruitamente o formato: AAAA-MM-DD");
         }
 
+    }
+
+    public List<ContabilHoras> listarTodos(){
+        return contabilHorasRepository.findAll();
     }
 }

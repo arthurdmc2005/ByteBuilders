@@ -8,6 +8,7 @@ import org.springframework.stereotype.Repository;
 public interface MembroRepository extends JpaRepository<Membro,Long> {
 
     Membro findByMatricula(String matricula);
+
 }
 
 

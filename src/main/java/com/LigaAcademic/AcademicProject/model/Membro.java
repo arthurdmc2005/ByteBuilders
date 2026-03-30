@@ -6,14 +6,14 @@ import jakarta.persistence.*;
 @Table(name = "membros")
 public class Membro {
 
-    public String nome;
-    public String cargo;
+    private String nome;
+    private String cargo;
     @Column(unique = true,length = 11)
-    public String matricula;
+    private String matricula;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    public Long id;
-    public String email;
+    private Long id;
+    private String email;
 
 
     public String getNome() {
