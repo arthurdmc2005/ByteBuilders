@@ -2,12 +2,16 @@ package com.LigaAcademic.AcademicProject.model;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.cglib.core.Local;
 
 import java.time.LocalDate;
 
 @Entity
 @Table(name = "contabilhoras")
+@NoArgsConstructor
+@AllArgsConstructor
 public class ContabilHoras {
 
     @Id
@@ -74,9 +78,6 @@ public class ContabilHoras {
 
     public void setParticipantes(String participantes) {
         this.participantes = participantes;
-    }
-
-    public ContabilHoras() {
     }
 
     public Long getId() {

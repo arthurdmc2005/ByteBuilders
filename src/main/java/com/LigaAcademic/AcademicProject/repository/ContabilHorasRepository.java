@@ -9,6 +9,4 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ContabilHorasRepository extends JpaRepository<ContabilHoras,Long> {
 
-
-
 }

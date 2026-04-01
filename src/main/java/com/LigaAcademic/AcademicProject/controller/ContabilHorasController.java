@@ -25,6 +25,15 @@ public class ContabilHorasController {
         return "Horas contabilizada";
     }
 
+    @GetMapping
+    public List<ContabilHoras> listarHoras(){
+        return contabilHorasService.listarTodos();
+    }
 
+    @DeleteMapping("/{id}")
+    public String deletar(@PathVariable Long id){
+        contabilHorasService.apagarRegistro(id);
+        return "Membro deletado";
+    }
 
 }

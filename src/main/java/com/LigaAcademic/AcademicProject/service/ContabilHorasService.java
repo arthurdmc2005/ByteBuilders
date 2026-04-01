@@ -44,4 +44,22 @@ public class ContabilHorasService {
     public List<ContabilHoras> listarTodos(){
         return contabilHorasRepository.findAll();
     }
+
+    public void apagarRegistro(Long idParaRemover){
+        if(idParaRemover == null){
+            System.out.println("O id não pode ser nulo");
+        }
+
+        ContabilHoras IdEncontrado = contabilHorasRepository.findById(idParaRemover).orElseThrow(() -> new RuntimeException("Não encontrado"));
+
+        if(IdEncontrado != null){
+            contabilHorasRepository.delete(IdEncontrado);
+        }else{
+            System.out.println("Contabilização com esse ID não encontrada");
+        }
+
+
+    }
+
+
 }
